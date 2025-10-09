@@ -12,73 +12,33 @@
 <body>
     <div class="relative w-[94%] mx-auto">
         <header class="relative p-6 px-0">
-           
-            <!-- Responsive Navbar -->
-            <nav class="bg-white  px-4 py-3">
-                <div class="flex items-center justify-between">
-                    <!-- Logo -->
-                    <div class="flex items-center">
-                        <img src="./assets/Logo.png" alt="Logo" class="h-[70px]" />
-                    </div>
-
-                    <!-- Hamburger Icon (Mobile) -->
-                    <div class="md:hidden">
-                        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16m-7 6h7"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- Nav Links (Desktop) -->
-                    <div class="hidden md:flex space-x-6">
-                        <a href="./home.html" class="text-gray-700 hover:text-green-600">Home</a>
+            <div class="flex items-center justify-between">
+                <div>
+                    <img src="./assets/Logo.png" alt="Logo" class="h-[70px]">
+                </div>
+                <div>
+                    <nav class="space-x-6">
+                        <a href="/" class="text-gray-700 hover:text-green-600">Home</a>
                         <a href="./ExploreState.html" class="text-gray-700 hover:text-green-600">Explore States</a>
-                        <a href="./NigeriaInvestment.html" class="text-gray-700 hover:text-green-600">Analytics</a>
-                        <a href="./Download.html" class="text-gray-700 hover:text-green-600">Downloads</a>
-                        <a href="./ContactInvestmentDesk.html" class="text-gray-700 hover:text-green-600">Contact</a>
-                    </div>
-
-                    <!-- Auth Buttons (Desktop) -->
-                    <div class="hidden md:flex items-center space-x-4">
-                        <a href="./signin.html"
-                            class="py-2.5 px-6 border-2 border-gray-400 text-gray-700 font-medium rounded-full hover:bg-gray-100 hover:border-[#2D7C59] hover:text-[#2D7C59] transition-all duration-300 text-center">
-                            Login
-                        </a>
-
-                        <a href="./signup.html"
-                            class="py-2.5 px-6 border-2 border-[#2D7C59] bg-[#2D7C59] text-white font-medium rounded-full hover:bg-white hover:text-[#2D7C59] transition-all duration-300 text-center shadow-sm">
-                            Register
-                        </a>
-                    </div>
-
+                        <a href="/" class="text-gray-700 hover:text-green-600">Analytics</a>
+                        <a href="/" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="/" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </nav>
                 </div>
-
-                <!-- Mobile Menu -->
-                <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden">
-                    <a href="./home.html" class="block text-gray-700 hover:text-green-600">Home</a>
-                    <a href="./ExploreState.html" class="block text-gray-700 hover:text-green-600">Explore States</a>
-                    <a href="./" class="block text-gray-700 hover:text-green-600">Analytics</a>
-                    <a href="./Download.html" class="block text-gray-700 hover:text-green-600">Downloads</a>
-                    <a href="./ContactInvestmentDesk.html" class="block text-gray-700 hover:text-green-600">Contact</a>
-                    <div class="flex flex-col space-y-3">
-                        <a href="./signin.html">
-                            <button
-                                class="w-full border-2 p-2 text-gray-700 hover:bg-gray-100 transition-all duration-300">
-                                Login
-                            </button>
-                        </a>
-                        <a href="./signup.html">
-                            <button
-                                class="w-full p-2 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 text-white border-2 border-[#2D7C59]">
-                                Register
-                            </button>
-                        </a>
-                    </div>
+                <div class="relative space-x-4">
+                    <a href="./signin.html">
+                        <button class="border-2 p-2 px-6 text-gray-700 hover:bg-gray-100">
+                            <span>Login</span>
+                        </button>
+                    </a>
+                    <a href="./signup.html">
+                        <button
+                            class="p-2 px-6 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 cursor-pointer text-white border-2 border-[#2D7C59]">
+                            <span>Register</span>
+                        </button>
+                    </a>
                 </div>
-            </nav>
+            </div>
         </header>
 
 
@@ -221,44 +181,92 @@
             </section>
 
             <!-- Downloadable Reports -->
-            <section>
-                <h1 class="font-bold text-2xl mb-8">Downloadable Reports</h1>
-                <div class="space-y-6">
-                    <div class="flex flex-col sm:flex-row justify-between items-center gap-6 p-6 border rounded-2xl">
-                        <div class="flex items-center gap-4">
-                            <img src="./assets/image 6.png" alt="" class="w-16 h-16 object-cover rounded-md" />
-                            <p class="font-semibold">Lagos State Investment Guide (PDF)</p>
+
+            <section class="my-20 w-full px-4 md:px-12">
+                <h1 class="font-bold text-3xl mb-8 text-center md:text-left">
+                    Featured Opportunities
+                </h1>
+
+                <!-- Responsive Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="./assets/image 1.png" alt="Lagos Tech Innovation Hub"
+                                class="w-full h-full object-cover" />
                         </div>
-                        <button
-                            class="flex items-center gap-2 bg-[#2D7C59] text-white px-6 py-2 rounded-lg hover:bg-[#256947] transition">
-                            <span>Download</span>
-                            <i class="fas fa-download"></i>
-                        </button>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-bold">Expansion of Okun  Water Company Limited</h2>
+                            <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                                <div>Sector:</div>
+                                <div>finance </div>
+                                <div>Project Status:</div>
+                                <div>operations</div>
+                                <div>Project Value:</div>
+                                <div>$147M</div>
+                                <div>Investment Required:</div>
+                                <div>$73.5M</div>
+                            </div>
+                            <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </button> -->
+                        </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row justify-between items-center gap-6 p-6 border rounded-2xl">
-                        <div class="flex items-center gap-4">
-                            <img src="./assets/image 6.png" alt="" class="w-16 h-16 object-cover rounded-md" />
-                            <p class="font-semibold">2025 Infrastructure Development Plan (PDF)</p>
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="./assets/image 1.png" alt="Kano Agricultural Processing Park"
+                                class="w-full h-full object-cover" />
                         </div>
-                        <button
-                            class="flex items-center gap-2 bg-[#2D7C59] text-white px-6 py-2 rounded-lg hover:bg-[#256947] transition">
-                            <span>Download</span>
-                            <i class="fas fa-download"></i>
-                        </button>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-bold">Establishment of Kaduna Spring Fire Trade Zone and Industrial Park</h2>
+                            <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                                <div>Sector:</div>
+                                <div>Commerce</div>
+                                <div>Project Status:</div>
+                                <div>Implementation</div>
+                                <div>Project Value:</div>
+                                <div>$145.5M</div>
+                                <div>Investment Required:</div>
+                                <div>$72.750M</div>
+                            </div>
+                            <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </button> -->
+                        </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row justify-between items-center gap-6 p-6 border rounded-2xl">
-                        <div class="flex items-center gap-4">
-                            <img src="./assets/image 6.png" alt="" class="w-16 h-16 object-cover rounded-md" />
-                            <p class="font-semibold">Sector Report: Real Estate & Housing (PDF)</p>
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="./assets/image 1.png" alt="Abuja Real Estate Development"
+                                class="w-full h-full object-cover" />
                         </div>
-                        <button
-                            class="flex items-center gap-2 bg-[#2D7C59] text-white px-6 py-2 rounded-lg hover:bg-[#256947] transition">
-                            <span>Download</span>
-                            <i class="fas fa-download"></i>
-                        </button>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-bold">Construction of Local and International Markets</h2>
+                            <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                                <div>Sector:</div>
+                                <div>commerce</div>
+                                <div>Project Status:</div>
+                                <div>Implementation</div>
+                                <div>Project Value:</div>
+                                <div>$500M</div>
+                                <div>Investment Required:</div>
+                                <div>$250M</div>
+                            </div>
+                            <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </button> -->
+                        </div>
                     </div>
+                    
                 </div>
             </section>
         </main>
@@ -267,7 +275,7 @@
 
         <footer class="relative p-14 px-0">
             <div class="flex items-center justify-between">
-                <img src="./assets/Logo.png" alt="Logo" class="h-8">
+                <img src="./assets/Logo.png" alt="Logo" class="h-[70px]">
                 <div>
                     <h2 class="text-lg font-semibold">Quick Link</h2>
                     <nav class="space-x-3">
