@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+<body>
+    
+            <div class="flex items-center flex-col justify-center h-[100vh] w-[300px] o mx-auto">
+                <div>
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <h3 class="font-bold text-xl py-3">Register a new vendor account</h3>
+                <form action="" method="POST" class="w-full space-y-2">
+                    <div class="flex flex-col space-y-2">
+                        <p>Full Name</p>
+                        <input class="border-2 p-2 rounded-md" type="text" placeholder="Enter your first name and last name" required />
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <p>Email Address</p>
+                        <input class="border-2 p-2 rounded-md w-full" type="email" placeholder="Enter your email address" required />
+                    </div>
+                    <div class="space-y-2">
+                        <p>Password</p>
+                        <div class="border-2 rounded-lg border-black flex items-center">
+                            <input type="password" placeholder="**************" class="p-2 focus:outline-none rounded-md w-full" required />
+                            <i class="fa fa-eye mr-2"></i>
+                        </div>
+                    </div>
+                    <div class=" items-center space-x-1 space-y-2">
+                        <div class="flex items-center space-x-1.5">
+                        <button class="text-xs flex items-center space-x-2 border-2 p-1.5 rounded-full">
+                            <i class="fa fa-times"></i>
+                            <span>Uppercase</span>
+                        </button>
+                        <button class="text-xs flex items-center space-x-2 border-2 p-1.5 rounded-full">
+                            <i class="fa fa-check"></i>
+                            <span>Lowercase</span>
+                        </button>
+                        <button class="text-xs flex items-center space-x-2 border-2 p-1.5 rounded-full">
+                            <i class="fa fa-times"></i>
+                            <span>Number</span>
+                        </button>
+                        </div>
+                        <div>
+                            <div class="flex items-center space-x-1.5">
+                        <button class="text-xs flex items-center space-x-2 border-2 p-1.5 rounded-full">
+                            <i class="fa fa-times"></i>
+                            <span>8 Characters</span>
+                        </button>
+                        <button class="text-xs flex items-center space-x-2 border-2 p-1.5 rounded-full">
+                            <i class="fa fa-times"></i>
+                            <span>Special Character</span>
+                        </button>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="text-center bg-[#2D7C59] mt-6 text-white p-2 w-full rounded-md hover:bg-green-900 hover:cursor-pointer">
+                        <span>Continue</span>
+                    </button>
+                </form>
+                <div class="mt-8">
+                    <p>If you already have an account, 
+                        <Link class="ml-1 text-black font-bold" to="/login">Login</Link>
+                    </p>
+                </div>
+            </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="relative w-[94%] mx-auto">
+       <header class="relative p-6 px-0">
+           
+            <!-- Responsive Navbar -->
+            <nav class="bg-white  px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <img src="./assets/Logo.png" alt="Logo" class="h-[70px]" />
+                    </div>
+
+                    <!-- Hamburger Icon (Mobile) -->
+                    <div class="md:hidden">
+                        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="./home.html" class="text-gray-700 hover:text-green-600">Home</a>
+                        <a href="./ExploreState.html" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="./" class="text-gray-700 hover:text-green-600">Analytics</a>
+                        <a href="./Download.html" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="./ContactInvestmentDesk.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </div>
+
+                    <!-- Auth Buttons (Desktop) -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="./signin.html"
+                            class="py-2.5 px-6 border-2 border-gray-400 text-gray-700 font-medium rounded-full hover:bg-gray-100 hover:border-[#2D7C59] hover:text-[#2D7C59] transition-all duration-300 text-center">
+                            Login
+                        </a>
+
+                        <a href="./signup.html"
+                            class="py-2.5 px-6 border-2 border-[#2D7C59] bg-[#2D7C59] text-white font-medium rounded-full hover:bg-white hover:text-[#2D7C59] transition-all duration-300 text-center shadow-sm">
+                            Register
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden">
+                    <a href="./home.html" class="block text-gray-700 hover:text-green-600">Home</a>
+                    <a href="./ExploreState.html" class="block text-gray-700 hover:text-green-600">Explore States</a>
+                    <a href="./" class="block text-gray-700 hover:text-green-600">Analytics</a>
+                    <a href="./Download.html" class="block text-gray-700 hover:text-green-600">Downloads</a>
+                    <a href="./ContactInvestmentDesk.html" class="block text-gray-700 hover:text-green-600">Contact</a>
+                    <div class="flex flex-col space-y-3">
+                        <a href="./signin.html">
+                            <button
+                                class="w-full border-2 p-2 text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                                Login
+                            </button>
+                        </a>
+                        <a href="./signup.html">
+                            <button
+                                class="w-full p-2 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 text-white border-2 border-[#2D7C59]">
+                                Register
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <main class="container mx-auto px-4 py-12 space-y-20">
+            <!-- State Intro -->
+            <section class="text-gray-800">
+                <div class="max-w-2xl space-y-4">
+                    <h1 class="text-3xl font-bold">Kogi State</h1>
+                    <p class="leading-relaxed">
+                        Kogi State, in north-central Nigeria, is rich in coal, limestone, and iron ore,
+                        making it a key mining and industrial hub—home to the Ajaokuta Steel
+                        Company and Dangote Cement’s largest factory. Agriculture remains
+                        vital, with major crops like yam, cassava, and rice. The government is
+                        prioritizing infrastructure and industrial growth to attract investment
+                    </p>
+                </div>
+            </section>
+
+            <!-- Key Stats -->
+            <section>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-[#4A3AFF1A] p-6 rounded-2xl space-y-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-md"></div>
+                        <div>
+                            <h3 class="text-[#4A3AFF] text-xl font-bold">$22.9 Million</h3>
+                            <p class="text-[#4A3AFF]">2025 IGR Projection</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#FF718B1A] p-6 rounded-2xl space-y-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-md"></div>
+                        <div>
+                            <h3 class="text-xl font-bold">4.8 Million</h3>
+                            <p>Est. Population 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#37996B1A] p-6 rounded-2xl space-y-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-md"></div>
+                        <div>
+                            <h3 class="text-xl font-bold">$382 Million</h3>
+                            <p>2025 Budget</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#E0F7EE] p-6 rounded-2xl space-y-4">
+                        <div class="w-12 h-12 bg-gray-300 rounded-md"></div>
+                        <div>
+                            <h3 class="text-xl font-bold">1.9 Million</h3>
+                            <p>2020 Labour Force</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12 text-gray-700">
+                    <div class="space-y-2">
+                        <p class="font-semibold">Tropical Savanna</p>
+                        <p>Climate</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-semibold">Nil</p>
+                        <p>Airport</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-semibold">Nil</p>
+                        <p>Port</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="font-semibold">Kogi-Hunan Special Economic
+                            Zone (SEZ) & Special Agro-
+                            Industrial Processing Zone (SAPZ)</p>
+                        <p>Special Economic Zones</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Sectors -->
+            <section>
+                <h1 class="text-3xl font-bold mb-8">Key Sectors</h1>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-4">
+                        <img src="./assets/image 4.png" alt="" class="mx-auto" />
+                        <p>Digital Technology & ICT Services</p>
+                    </div>
+                    <div class="space-y-4">
+                        <img src="./assets/image 5.png" alt="" class="mx-auto" />
+                        <p>Tourism</p>
+                    </div>
+                    <div class="space-y-4">
+                        <img src="./assets/image 6.png" alt="" class="mx-auto" />
+                        <p>Logistics & Transportation</p>
+                    </div>
+                    <div class="space-y-4">
+                        <img src="./assets/image 7.png" alt="" class="mx-auto" />
+                        <p>Agriculture / Processing</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Policies & Competitive Advantage -->
+            <section>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="bg-[#FAFAFA] p-8 rounded-2xl space-y-5">
+                        <h1 class="text-2xl font-bold">Key Policy Initiatives</h1>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-700">
+                            <li>The Kogi State Investment Promotion and PPP
+                                agency serves as a one-stop shop for
+                                streamlined investment approvals.</li>
+                            <li>Investment-friendly tax reforms offer breaks for
+                                new industries.</li>
+                            <li>Digitized land administration simplifies access to
+                                land and certificates of occupancy.</li>
+                            <li>Small Claims Courts provide fast, informal
+                                resolution of debts up to ₦100 million.</li>
+                            <li>A Special Economic Zone in Ajaokuta targets
+                                resource-based industrial growth.</li>
+                            <li>Ukpake hosts a designated Agro-Industrial
+                                Processing Zone to drive agro-industrial
+                                development.</li>
+                            <li>A land investment framework supports
+                                responsible and inclusive agricultural ventures.</li>
+                            <li>Mortgage foreclosure law promotes housing and
+                                real estate development</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-[#FAFAFA] p-8 rounded-2xl space-y-5">
+                        <h1 class="text-2xl font-bold">Competitive Advantage</h1>
+                        <ul class="list-disc pl-5 space-y-3 text-gray-700">
+                            <li>Strategically located with access to Nigeria’s large
+                                central market.</li>
+                            <li>Rich in natural resources supporting both mining
+                                and agriculture.</li>
+                            <li>Strong industrial base with major factories like
+                                Dangote Cement, Mangal Cement, BUA Cement,
+                                and Ajaokuta Steel Company.</li>
+                            <li>High renewable energy potential, including solar,
+                                biomass, and wind.</li>
+                            <li>Development of LNG facilities strengthens the
+                                state’s energy security.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Downloadable Reports -->
+
+            <section class="my-20 w-full px-4 md:px-12">
+                <h1 class="font-bold text-3xl mb-8 text-center md:text-left">
+                    Featured Opportunities
+                </h1>
+
+                <!-- Responsive Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="./assets/image 1.png" alt="Lagos Tech Innovation Hub"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-bold">Establishment of Special Economic Zone & Industrial Park</h2>
+                            <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                                <div>Sector:</div>
+                                <div>commerce </div>
+                                <div>Project Status:</div>
+                                <div>Planning</div>
+                                <div>Project Value:</div>
+                                <div>$5M</div>
+                                <div>Investment Required:</div>
+                                <div>$25M</div>
+                            </div>
+                            <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </button> -->
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="./assets/image 1.png" alt="Kano Agricultural Processing Park"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-bold">Lokoja Ultra-Modern Market</h2>
+                            <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                                <div>Sector:</div>
+                                <div>commerce</div>
+                                <div>Project Status:</div>
+                                <div>Implementation</div>
+                                <div>Project Value:</div>
+                                <div>$58M</div>
+                                <div>Investment Required:</div>
+                                <div>$29M</div>
+                            </div>
+                            <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </button> -->
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="./assets/image 1.png" alt="Abuja Real Estate Development"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <h2 class="text-xl font-bold">Kogi Agro-Industrial Processing Zone</h2>
+                            <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                                <div>Sector:</div>
+                                <div>Agriculture</div>
+                                <div>Project Status:</div>
+                                <div>Planning</div>
+                                <div>Project Value:</div>
+                                <div>$180M</div>
+                                <div>Investment Required:</div>
+                                <div>$90M</div>
+                            </div>
+                            <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                                <span>View Details</span>
+                                <i class="fa fa-arrow-right"></i>
+                            </button> -->
+                        </div>
+                    </div>
+
+                     <!-- Card 2 -->
+                     <div
+                     class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                     <div class="aspect-[4/3] overflow-hidden">
+                         <img src="./assets/image 1.png" alt="Kano Agricultural Processing Park"
+                             class="w-full h-full object-cover" />
+                     </div>
+                     <div class="p-4 space-y-2">
+                         <h2 class="text-xl font-bold">Omi-Kpanje Dam Project</h2>
+                         <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                             <div>Sector:</div>
+                             <div>Energy</div>
+                             <div>Project Status:</div>
+                             <div>Implementation</div>
+                             <div>Project Value:</div>
+                             <div>$5M</div>
+                             <div>Investment Required:</div>
+                             <div>$2.5M</div>
+                         </div>
+                         <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                             <span>View Details</span>
+                             <i class="fa fa-arrow-right"></i>
+                         </button> -->
+                     </div>
+                 </div>
+
+                 <!-- Card 3 -->
+                 <div
+                     class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300">
+                     <div class="aspect-[4/3] overflow-hidden">
+                         <img src="./assets/image 1.png" alt="Abuja Real Estate Development"
+                             class="w-full h-full object-cover" />
+                     </div>
+                     <div class="p-4 space-y-2">
+                         <h2 class="text-xl font-bold">Lokoja Mega Terminal</h2>
+                         <div class="grid grid-cols-2 gap-1 text-gray-700 text-sm">
+                             <div>Sector:</div>
+                             <div>Transportation</div>
+                             <div>Project Status:</div>
+                             <div>Implementation</div>
+                             <div>Project Value:</div>
+                             <div>$200M</div>
+                             <div>Investment Required:</div>
+                             <div>$100M</div>
+                         </div>
+                         <!-- <button class="flex items-center gap-2 text-[#2D7C59] hover:underline mt-3">
+                             <span>View Details</span>
+                             <i class="fa fa-arrow-right"></i>
+                         </button> -->
+                     </div>
+                 </div>
+                    
+                </div>
+            </section>
+            
+        </main>
+
+
+
+        <footer class="relative p-14 px-0">
+            <div class="flex items-center justify-between">
+                <img src="./assets/Logo.png" alt="Logo" class="h-8">
+                <div>
+                    <h2 class="text-lg font-semibold">Quick Link</h2>
+                    <nav class="space-x-3">
+                        <a href="/" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="/" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="/" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg font-semibold">Contact info</h3>
+                    <p class="text-gray-600">Example@nia.gov.ng | +234 xxx xxx xxxx</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-facebook text-[#2D7C59]"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-twitter text-[#2D7C59]"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-linkedin text-[#2D7C59]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

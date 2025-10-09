@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="relative w-[94%] mx-auto">
+        <header class="relative p-6 px-0">
+            <!-- <div class="flex items-center justify-between">
+                <div>
+                    <img src="./assets/Logo.png" alt="Logo" class="h-[30px]">
+                </div>
+                <div>
+                    <nav class="space-x-6">
+                        <a href="./home.html" class="text-gray-700 hover:text-green-600">Home</a>
+                        <a href="./ExploreState.html" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="./" class="text-gray-700 hover:text-green-600">Analytics</a>
+                        <a href="./Download.html" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="./ContactInvestmentDesk.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="relative space-x-4">
+                    <a href="./signin.html">
+                        <button class="border-2 p-2 px-6 text-gray-700 hover:bg-gray-100">
+                            <span>Login</span>
+                        </button>
+                    </a>
+                    <a href="./signup.html">
+                        <button
+                            class="p-2 px-6 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 cursor-pointer text-white border-2 border-[#2D7C59]">
+                            <span>Register</span>
+                        </button>
+                    </a>
+                </div>
+            </div> -->
+            <!-- Responsive Navbar -->
+            <nav class="bg-white  px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <img src="./assets/Logo.png" alt="Logo" class="h-[30px]" />
+                    </div>
+
+                    <!-- Hamburger Icon (Mobile) -->
+                    <div class="md:hidden">
+                        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="./home.html" class="text-gray-700 hover:text-green-600">Home</a>
+                        <a href="./ExploreState.html" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="./" class="text-gray-700 hover:text-green-600">Analytics</a>
+                        <a href="./Download.html" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="./ContactInvestmentDesk.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </div>
+
+                    <!-- Auth Buttons (Desktop) -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="./signin.html">
+                            <button
+                                class="border-2 p-2 px-6 text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                                Login
+                            </button>
+                        </a>
+                        <a href="./signup.html">
+                            <button
+                                class="p-2 px-6 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 cursor-pointer text-white border-2 border-[#2D7C59]">
+                                Register
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden">
+                    <a href="./home.html" class="block text-gray-700 hover:text-green-600">Home</a>
+                    <a href="./ExploreState.html" class="block text-gray-700 hover:text-green-600">Explore States</a>
+                    <a href="./" class="block text-gray-700 hover:text-green-600">Analytics</a>
+                    <a href="./Download.html" class="block text-gray-700 hover:text-green-600">Downloads</a>
+                    <a href="./ContactInvestmentDesk.html" class="block text-gray-700 hover:text-green-600">Contact</a>
+                    <div class="flex flex-col space-y-3">
+                        <a href="./signin.html">
+                            <button
+                                class="w-full border-2 p-2 text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                                Login
+                            </button>
+                        </a>
+                        <a href="./signup.html">
+                            <button
+                                class="w-full p-2 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 text-white border-2 border-[#2D7C59]">
+                                Register
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="relative">
+            <section class="flex flex-col-reverse md:flex-row items-center justify-between my-20 px-4 md:px-12 gap-10">
+                <!-- Text Section -->
+                <div class="space-y-6 text-center md:text-left">
+                    <h1 class="text-3xl md:text-5xl font-bold max-w-[500px] mx-auto md:mx-0">
+                        Unlock Investment Opportunities Across Nigeria
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-[500px] mx-auto md:mx-0 text-gray-700">
+                        Discover projects, explore sectors, and connect with government
+                        agencies for seamless investment.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
+                        <button
+                            class="py-2.5 px-6 border border-black bg-[#2D7C59] hover:bg-white hover:text-[#2D7C59] transition-all duration-300 text-white w-full sm:w-auto">
+                            Explore States
+                        </button>
+                        <button
+                            class="py-2.5 px-6 border border-black hover:bg-gray-100 transition-all duration-300 w-full sm:w-auto">
+                            Browse Reports
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Image Section (hidden on small screens) -->
+                <div class="hidden md:block relative">
+                    <img src="./assets/flag.png" alt="Flag" class="max-w-[400px] lg:max-w-[500px]" />
+                </div>
+            </section>
+
+
+            <section class="flex items-center justify-between my-20 px-4">
+                <div class="space-y-6">
+                    <h1 class="text-3xl font-bold max-w-[500px]">Unlock Investment Opportunities Across Nigeria</h1>
+                    <p class="text-xl max-w-[500px]">Discover projects, explore sectors, and connect with government
+                        agencies for seamless investment.</p>
+                    <div class="flex items-center space-x-2">
+                        <button
+                            class="py-2.5 px-4 border border-black bg-[#2D7C59] hover:bg-white hover:text-[#2D7C59] transition-all duration-300 cursor-pointer text-white">
+                            <span>Explore States</span>
+                        </button>
+                        <button class="py-2.5 px-4 border border-black">
+                            <span>Browse Reports</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative sm:hidden md:block lg:block">
+                    <div class="relative">
+                        <img src="./assets/flag.png" alt="Flag" />
+                        <!-- <img src="./assets/Chart label (1).png" alt="Chart 1" class="absolute top-20 left-60" /> -->
+                        <!-- <img src="./assets/Chart label (2).png" alt="Chart 2" class="absolute top-40 right-30" /> -->
+                        <!-- <img src="./assets/Chart label (3).png" alt="Chart 3" class="absolute top-40 right-30" /> -->
+                    </div>
+                </div>
+            </section>
+            <section class="flex items-center justify-between my-20 w-full px-4">
+                <div class="w-full">
+                    <h1 class="font-bold text-3xl mb-8">Featured Opportunities</h1>
+                    <div class="flex items-center justify-between gap-5">
+                        <div class="relative w-full">
+                            <img src="./assets/image 1.png" alt="Background" class="w-full h-[300px]" />
+                            <div class="space-y-2 mt-2">
+                                <h1 class="text-xl font-bold">Lagos Tech Innovation Hub</h1>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div>Sector:</div>
+                                    <div>Technology & Startups</div>
+                                    <div>Capital Requirement</div>
+                                    <div>$50M</div>
+                                    <div>ROI Potential</div>
+                                    <div>High</div>
+                                </div>
+                                <button class="flex items-center gap-3">
+                                    <span>View Details</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative w-full">
+                            <img src="./assets/image 1.png" alt="Background" class="w-full h-[300px]" />
+                            <div class="space-y-2 mt-2">
+                                <h1 class="text-xl font-bold">Lagos Tech Innovation Hub</h1>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div>Sector:</div>
+                                    <div>Technology & Startups</div>
+                                    <div>Capital Requirement</div>
+                                    <div>$50M</div>
+                                    <div>ROI Potential</div>
+                                    <div>High</div>
+                                </div>
+                                <button class="flex items-center gap-3">
+                                    <span>View Details</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="relative w-full">
+                            <img src="./assets/image 1.png" alt="Background" class="w-full h-[300px]" />
+                            <div class="space-y-2 mt-2">
+                                <h1 class="text-xl font-bold">Lagos Tech Innovation Hub</h1>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div>Sector:</div>
+                                    <div>Technology & Startups</div>
+                                    <div>Capital Requirement</div>
+                                    <div>$50M</div>
+                                    <div>ROI Potential</div>
+                                    <div>High</div>
+                                </div>
+                                <button class="flex items-center gap-3">
+                                    <span>View Details</span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative space-y-8 my-20 px-4">
+                <h1 class="text-3xl font-bold">Why Invest in Nigeria</h1>
+                <div class="flex items-center gap-5">
+                    <div class="bg-[#4A3AFF1A] relative w-[488px] h-[359px]">
+                        <div class="w-[320px] absolute top-[120px] left-[32px] space-y-3">
+                            <img class="w-20 h-20" src="./assets/Frame 2147235231 (1).png" alt="Clip 1" />
+                            <p class="font-bold text-lg">Africa's Largest Economy</p>
+                            <p>GDP valued at $477 Billion, leading growth hub in Africa.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#37996B1A] relative h-[359px] w-[790px]">
+                        <div class="w-[320px] absolute top-[120px] left-[32px] space-y-3">
+                            <img src="./assets/Frame 2147235231 (2).png" alt="Clip 2" class="w-20 h-20" />
+                            <p class="font-bold text-lg">Population Advantage</p>
+                            <p>200M+ people with a young, skilled, and dynamic workforce</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div class="bg-[#FF718B1A] relative h-[359px] w-[790px]">
+                        <div class="w-[320px] absolute top-[120px] left-[32px] space-y-3">
+                            <img src="./assets/Frame 2147235231 (2).png" alt="Clip 3" class="w-20 h-20" />
+                            <p class="font-bold text-lg">Thriving Sectors</p>
+                            <p>Opportunities across Agriculture, Energy, Technology, Real Estate, and more.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#155CC61A] relative w-[488px] h-[359px]">
+                        <div class="w-[320px] absolute top-[120px] left-[32px] space-y-3">
+                            <img src="./assets/Frame 2147235231 (3).png" alt="Clip 4" class="w-20 h-20" />
+                            <p class="font-bold text-lg">Investor-Friendly Policies</p>
+                            <p>Tax incentives, land access, and government-backed grants</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relative my-20 px-4">
+                <h1 class="text-3xl font-bold max-w-[300px] mb-10">Here's what a past investor says</h1>
+                <div class="bg-[#E1FEE5] p-5">
+                    <div class="flex items-center gap-6">
+                        <img src="./assets/name.png" alt="Investor" class="object-contain w-[355px] h-[295px]" />
+                        <div class="flex flex-col max-w-[600px]">
+                            <p class="max-w-[300px]">Nigeria is the gateway to Africa's growth story, strategically
+                                positioned as the continent's largest economy and most dynamic market. With a young
+                                population and abundant resources, opportunities here are limitless. The government is
+                                committed to fostering a business-friendly environment built on security, transparency,
+                                and profitability for every investor.</p>
+                            <div>
+                                <p class="font-bold">Fake Name</p>
+                                <p class="font-bold">Fake Position</p>
+                            </div>
+                        </div>
+                        <div class="border-l border-black h-[295px] relative">
+                            <div class="absolute bottom-0 left-4">
+                                <p class="text-xl">99.9%</p>
+                                <p class="text-xl">Guaranteed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="px-4">
+                <h1 class="text-2xl text-black font-bold mb-8">Frequently Asked Questions</h1>
+                <div class="space-y-4">
+                    <div class="bg-[#FAFAFA] p-3">
+                        <div class="flex items-center justify-between">
+                            <h1 class="font-bold">How do I get started with investing in Nigeria?</h1>
+                            <div class="w-[35px] h-[35px] bg-[#2D7C59] flex items-center justify-center rounded-full">
+                                <i class="fa fa-angle-up text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-8 mb-4 text-black">
+                            <p>You can start by exploring opportunities by state or sector on our portal. Once you
+                                identify a project of interest, contact the Investment Desk for detailed guidance, due
+                                diligence documents, and next steps.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#FAFAFA] p-3">
+                        <div class="flex items-center justify-between">
+                            <h1 class="font-bold">Can I get government guarantees on my investment?</h1>
+                            <div class="w-[35px] h-[35px] bg-[#2D7C59] flex items-center justify-center rounded-full">
+                                <i class="fa fa-angle-up text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-8 mb-4 text-black">
+                            <p>Certain strategic projects qualify for government-backed guarantees or risk-sharing
+                                agreements, especially in infrastructure, energy, and agriculture. The Investment Desk
+                                can advise you on available options.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#FAFAFA] p-3">
+                        <div class="flex items-center justify-between">
+                            <h1 class="font-bold">Can foreign investors own land or property in Nigeria?</h1>
+                            <div class="w-[35px] h-[35px] bg-[#2D7C59] flex items-center justify-center rounded-full">
+                                <i class="fa fa-angle-up text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-8 mb-4 text-black">
+                            <p>Yes, foreign investors can lease or own land and property, but regulations differ by
+                                state. Our team will connect you with the relevant state agency for clear guidance.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#FAFAFA] p-3">
+                        <div class="flex items-center justify-between">
+                            <h1 class="font-bold">Which sectors are currently most attractive for investment?</h1>
+                            <div class="w-[35px] h-[35px] bg-[#2D7C59] flex items-center justify-center rounded-full">
+                                <i class="fa fa-angle-up text-white"></i>
+                            </div>
+                        </div>
+                        <div class="mt-8 mb-4 text-black">
+                            <p>Nigeria's fastest-growing sectors include:</p>
+                            <ul class="list-disc pl-5">
+                                <li>Agriculture & Agro-Processing</li>
+                                <li>Technology & Digital Economy</li>
+                                <li>Renewable Energy</li>
+                                <li>Infrastructure & Real Estate</li>
+                                <li>Healthcare & Pharmaceuticals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="flex bg-gradient-to-r from-[#E1FEE5] to-white items-center justify-between">
+                    <div class="pl-12">
+                        <h1 class="text-2xl font-bold">Ready to Invest?</h1>
+                        <p>Start with a State that matches your goals.</p>
+                        <button class="bg-[#2D7C59] mt-12 px-5 py-2.5 text-white">
+                            <span>Browse All Opportunities</span>
+                        </button>
+                    </div>
+                    <div>
+                        <img src="./assets/image 3.png" alt="Investment" />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="relative p-14 px-0">
+            <div class="flex items-center justify-between">
+                <img src="./assets/Logo.png" alt="Logo" class="h-8">
+                <div>
+                    <h2 class="text-lg font-semibold">Quick Link</h2>
+                    <nav class="space-x-3">
+                        <a href="/" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="/" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="/" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg font-semibold">Contact info</h3>
+                    <p class="text-gray-600">Example@nia.gov.ng | +234 xxx xxx xxxx</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-facebook text-[#2D7C59]"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-twitter text-[#2D7C59]"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-linkedin text-[#2D7C59]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Simple Script for Toggle -->
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+
+</html>

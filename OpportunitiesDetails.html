@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="relative w-[94%] mx-auto">
+
+       <header class="relative p-6 px-0">
+           
+            <!-- Responsive Navbar -->
+            <nav class="bg-white  px-4 py-3">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <img src="./assets/Logo.png" alt="Logo" class="h-[70px]" />
+                    </div>
+
+                    <!-- Hamburger Icon (Mobile) -->
+                    <div class="md:hidden">
+                        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Nav Links (Desktop) -->
+                    <div class="hidden md:flex space-x-6">
+                        <a href="./home.html" class="text-gray-700 hover:text-green-600">Home</a>
+                        <a href="./ExploreState.html" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="./" class="text-gray-700 hover:text-green-600">Analytics</a>
+                        <a href="./Download.html" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="./ContactInvestmentDesk.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </div>
+
+                    <!-- Auth Buttons (Desktop) -->
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="./signin.html"
+                            class="py-2.5 px-6 border-2 border-gray-400 text-gray-700 font-medium rounded-full hover:bg-gray-100 hover:border-[#2D7C59] hover:text-[#2D7C59] transition-all duration-300 text-center">
+                            Login
+                        </a>
+
+                        <a href="./signup.html"
+                            class="py-2.5 px-6 border-2 border-[#2D7C59] bg-[#2D7C59] text-white font-medium rounded-full hover:bg-white hover:text-[#2D7C59] transition-all duration-300 text-center shadow-sm">
+                            Register
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden">
+                    <a href="./home.html" class="block text-gray-700 hover:text-green-600">Home</a>
+                    <a href="./ExploreState.html" class="block text-gray-700 hover:text-green-600">Explore States</a>
+                    <a href="./" class="block text-gray-700 hover:text-green-600">Analytics</a>
+                    <a href="./Download.html" class="block text-gray-700 hover:text-green-600">Downloads</a>
+                    <a href="./ContactInvestmentDesk.html" class="block text-gray-700 hover:text-green-600">Contact</a>
+                    <div class="flex flex-col space-y-3">
+                        <a href="./signin.html">
+                            <button
+                                class="w-full border-2 p-2 text-gray-700 hover:bg-gray-100 transition-all duration-300">
+                                Login
+                            </button>
+                        </a>
+                        <a href="./signup.html">
+                            <button
+                                class="w-full p-2 bg-[#2D7C59] hover:bg-white hover:border-[#2D7C59] hover:text-black transition-all duration-300 text-white border-2 border-[#2D7C59]">
+                                Register
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container mx-auto px-4 py-12 space-y-20">
+            <!-- Header Section -->
+            <section>
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center md:text-left">
+                        Lagos Tech Innovation Hub
+                    </h1>
+                    <button
+                        class="bg-[#2D7C59] hover:bg-[#256b4c] transition-all text-white font-medium py-2 px-6 rounded-lg shadow">
+                        Contact Investment Desk
+                    </button>
+                </div>
+
+                <div class="mt-4 text-center md:text-left text-gray-600">
+                    <p>A world-class technology and startup hub designed to position</p>
+                    <p>Lagos as Africa's Silicon Valley.</p>
+                </div>
+
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 py-6 border-t border-b border-gray-200 text-center md:text-left">
+                    <div>
+                        <h2 class="font-semibold text-lg text-gray-800">Lekki, Lagos State</h2>
+                        <p class="text-gray-500">Location</p>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-lg text-gray-800">$50M</h2>
+                        <p class="text-gray-500">Project Value</p>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-lg text-gray-800">Pending</h2>
+                        <p class="text-gray-500">Status</p>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold text-lg text-gray-800">2025 - 2030</h2>
+                        <p class="text-gray-500">Project Duration</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Overview -->
+            <section>
+                <h2 class="text-2xl font-bold mb-6 text-gray-800">Project Overview</h2>
+                <div class="flex flex-col lg:flex-row items-start gap-10">
+                    <div class="flex-1 space-y-6">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Description</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                The Lagos Tech Innovation Hub will provide co-working spaces, incubation programs, and
+                                high-speed infrastructure for startups in fintech, healthtech, and agritech. It aims to
+                                attract global VCs, foster job creation, and accelerate Nigeria's digital economy.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 class="font-semibold text-gray-800 text-lg mb-1">Project Owner</h3>
+                            <p class="text-gray-600">Ministry of Environment and Water Resources</p>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 w-full">
+                        <!-- Image Slider -->
+                        <div class="relative overflow-hidden rounded-xl shadow-lg">
+                            <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+                                <img src="./assets/image 1.png" class="w-full flex-shrink-0 object-cover" alt="Image 1">
+                                <img src="./assets/image2.png" class="w-full flex-shrink-0 object-cover" alt="Image 2">
+                                <img src="./assets/image3.png" class="w-full flex-shrink-0 object-cover" alt="Image 3">
+                                <img src="./assets/image4.png" class="w-full flex-shrink-0 object-cover" alt="Image 4">
+                            </div>
+                        </div>
+
+                        <!-- Slider Dots -->
+                        <div class="flex justify-center gap-4 mt-4">
+                            <button class="dot w-3 h-3 border border-gray-400 rounded-full"></button>
+                            <button class="dot w-3 h-3 border border-gray-400 rounded-full"></button>
+                            <button class="dot w-3 h-3 border border-gray-400 rounded-full"></button>
+                            <button class="dot w-3 h-3 border border-gray-400 rounded-full"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Investment Details -->
+            <section>
+                <h2 class="text-2xl font-bold mb-8 text-gray-800">Investment Details</h2>
+                <div class="overflow-x-auto">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 text-gray-700">
+                        <div class="font-semibold">Estimated Cost</div>
+                        <div>$50 Million</div>
+
+                        <div class="font-semibold">Funding Model</div>
+                        <div>Public-Private Partnership (PPP)</div>
+
+                        <div class="font-semibold">Project Stage</div>
+                        <div>Feasibility Study Completed (2024)</div>
+
+                        <div class="font-semibold">Investment Returns</div>
+                        <div>Projected IRR: 18%</div>
+
+                        <div class="font-semibold">Land Availability</div>
+                        <div>20 hectares allocated by Lagos State</div>
+
+                        <div class="font-semibold">Government Incentive</div>
+                        <div>5-year corporate tax holiday + import duty relief</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Documents -->
+            <section>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-8">Project Documents</h2>
+                <div class="space-y-10">
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between bg-gray-50 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center gap-4">
+                            <img src="./assets/image6.png" alt="Document Preview" class="w-20 rounded-lg shadow">
+                            <h3 class="font-semibold text-gray-800">Project Prospectus PDF</h3>
+                        </div>
+                        <button
+                            class="mt-4 md:mt-0 bg-[#2D7C59] hover:bg-[#256b4c] text-white px-6 py-2 rounded-lg flex items-center gap-2 shadow">
+                            <span>Download</span>
+                            <i class="fa fa-download"></i>
+                        </button>
+                    </div>
+
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between bg-gray-50 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center gap-4">
+                            <img src="./assets/image6.png" alt="Document Preview" class="w-20 rounded-lg shadow">
+                            <h3 class="font-semibold text-gray-800">Feasibility Study Summary PDF</h3>
+                        </div>
+                        <button
+                            class="mt-4 md:mt-0 bg-[#2D7C59] hover:bg-[#256b4c] text-white px-6 py-2 rounded-lg flex items-center gap-2 shadow">
+                            <span>Download</span>
+                            <i class="fa fa-download"></i>
+                        </button>
+                    </div>
+
+                    <div
+                        class="flex flex-col md:flex-row items-center justify-between bg-gray-50 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center gap-4">
+                            <img src="./assets/image6.png" alt="Document Preview" class="w-20 rounded-lg shadow">
+                            <h3 class="font-semibold text-gray-800">Business Model Canvas PDF</h3>
+                        </div>
+                        <button
+                            class="mt-4 md:mt-0 bg-[#2D7C59] hover:bg-[#256b4c] text-white px-6 py-2 rounded-lg flex items-center gap-2 shadow">
+                            <span>Download</span>
+                            <i class="fa fa-download"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Simple Auto-Slider Script -->
+        <script>
+            const slider = document.getElementById('slider');
+            const dots = document.querySelectorAll('.dot');
+            let index = 1; // Start from image 2
+
+            function updateSlider() {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('bg-[#2D7C59]', i === index);
+                    dot.classList.toggle('border-gray-400', i !== index);
+                    dot.classList.toggle('border-[#2D7C59]', i === index);
+                });
+            }
+
+            function nextSlide() {
+                index = (index + 1) % dots.length;
+                updateSlider();
+            }
+
+            // Auto-slide every 4 seconds
+            let slideInterval = setInterval(nextSlide, 4000);
+
+            // Allow manual control via dots
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    index = i;
+                    updateSlider();
+                    slideInterval = setInterval(nextSlide, 4000);
+                });
+            });
+
+            // Initialize on load
+            updateSlider();
+        </script>
+
+
+
+        <footer class="relative p-14 px-0">
+            <div class="flex items-center justify-between">
+                <img src="./assets/Logo.png" alt="Logo" class="h-8">
+                <div>
+                    <h2 class="text-lg font-semibold">Quick Link</h2>
+                    <nav class="space-x-3">
+                        <a href="./ExploreState.html" class="text-gray-700 hover:text-green-600">Explore States</a>
+                        <a href="./Download.html" class="text-gray-700 hover:text-green-600">Downloads</a>
+                        <a href="./ContactInvestmentDesk.html" class="text-gray-700 hover:text-green-600">Contact</a>
+                    </nav>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-lg font-semibold">Contact info</h3>
+                    <p class="text-gray-600">Example@nia.gov.ng | +234 xxx xxx xxxx</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-facebook text-[#2D7C59]"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-twitter text-[#2D7C59]"></i>
+                        </div>
+                        <div class="w-[30px] h-[30px] bg-[#E1FEE5] flex items-center justify-center">
+                            <i class="fab fa-linkedin text-[#2D7C59]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
